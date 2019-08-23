@@ -1,5 +1,5 @@
 
-#Step1: image resizing! all images should have 
+#Step1: image preprocessing
 import cv2
 import numpy as np
 import glob
