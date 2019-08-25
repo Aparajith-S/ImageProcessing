@@ -65,10 +65,10 @@ def img_resize(image, width =None,height=None, interpol=None):
                    resized_img=cv2.resize(image,dim,interpolation=cv2.INTER_AREA)
             elif hratio<1 and wratio>1:
                    resized_img=cv2.resize(image,(wt,height),interpolation=cv2.INTER_AREA)
-                   resized_img=cv2.resize(image,(width,ht),interpolation=cv2.INTER_CUBIC)
+                   resized_img=cv2.resize(resized_img,(width,ht),interpolation=cv2.INTER_CUBIC)
             elif hratio>1 and wratio<1:       
                    resized_img=cv2.resize(image,(width,ht),interpolation=cv2.INTER_AREA)
-                   resized_img=cv2.resize(image,(wt,height),interpolation=cv2.INTER_CUBIC)
+                   resized_img=cv2.resize(resized_img,(wt,height),interpolation=cv2.INTER_CUBIC)
             else:
                    resized_img=cv2.resize(image,dim,interpolation=cv2.INTER_CUBIC)
         else:
