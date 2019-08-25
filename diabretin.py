@@ -5,9 +5,14 @@ from math import sqrt
 #import png
 import os
 
+#change the destination to store test images and training images accordingly
 dst="D:\\trainown\\"
+
 #os.mkdir("D:\\trainown\\sample")
+
+#change the source to read test images and training images accordingly
 imagelist=glob.glob("D:\\aptos2019\\train_images\\*.png")
+
 debug=0
 #implemented an autocontrast alg. later found it would be useless.
 def autocontr(img):
