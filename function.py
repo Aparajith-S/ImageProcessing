@@ -44,5 +44,5 @@ waitKey(0)
 
 # please compare both the methods and see if you can view changes in the image. 
 # One idea is to put it in a loop and view a couple of images that are really horrible.
-# i used equalize. There seems to be a better way- using adaptive histogram equalizaton - 
+# i used equalize. There seems to be a better way- using adaptive histogram equalizaton - CLAHE 
 # this looks promising but, we need to check this on few images which are of really good and really horrible quality. 
