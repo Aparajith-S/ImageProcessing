@@ -252,7 +252,7 @@ model = Sequential()
 
 #K.I.S.S model
 #add model layers - 
-#VGGNet inspired. keep increasing the conv layers. Let it Go.... strategy. 
+#VGGNet inspired.
 
 model.add(Conv2D(32, kernel_size=5,strides=1, activation='relu', input_shape=(480,480,3)))
 model.add(Conv2D(32, kernel_size=5,strides=1, activation='relu'))
@@ -302,7 +302,7 @@ model.add(Dense(5, activation='softmax'))
 
 # %% [code]
 #compile model using accuracy to measure model performance
-#Kaggle is compiling the shit before committing. so please remove comments and add them when committing (trial)
+#Kaggle is compiling this part before committing. so please remove comments and add them when committing (trial)
 #model.compile(optimizer='adam', loss='kullback_leibler_divergence', metrics=['accuracy'])
 #train the model
 #model.fit(train_x_np, train_y, validation_data=(test_x_np, test_y), epochs=20)
